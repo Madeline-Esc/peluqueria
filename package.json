@@ -1,0 +1,44 @@
+{
+  "name": "app-peluquerias",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@react-native-community/masked-view": "~0.1.6",
+    "@react-navigation/bottom-tabs": "~5.2.6",
+    "@react-navigation/native": "~5.1.5",
+    "@react-navigation/stack": "~5.2.10",
+    "elements": "^0.6.0",
+    "expo": "~44.0.0",
+    "expo-image-picker": "^12.0.2",
+    "expo-permissions": "^13.1.1",
+    "expo-status-bar": "~1.2.0",
+    "firebase": "~8.2.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "^0.67.4",
+    "react-native-elements": "^3.4.2",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-keyboard-aware-scroll-view": "~0.9.1",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-toast-message": "~1.4.9",
+    "react-native-web": "0.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "private": true
+}
