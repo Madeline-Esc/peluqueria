@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements'
 import { firebaseApp } from '../../utils/Firebase'
 import firebase from 'firebase/app'
 
-export default function Barberias(){
+export default function Barberias({navigation}){
     const [user, setUser] = useState(null)
 
     useEffect(() => {
@@ -24,6 +24,7 @@ export default function Barberias(){
                 name='plus'
                 color='#0833A2'
                 containerStyle={styles.btnContainer}
+                onPress={() => navigation.navigate("add-barberia")}
             />
             )}
         </View>
