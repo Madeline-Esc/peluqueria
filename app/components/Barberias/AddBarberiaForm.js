@@ -5,7 +5,7 @@ import { loadImageFromGallery } from '../../utils/Helpers'
 import {map, size, filter, isEmpty} from 'lodash'
 import Toast from 'react-native-toast-message'
 import uuid from 'random-uuid-v4'
-import { addDocumentWithoutId, uploadImage, getCurrentUser } from '../../utils/Actions'
+import { addDocumentWithoutId, uploadImage } from '../../utils/Actions'
 import { validateEmail, validatePhone } from '../../utils/Validation'
 
 const widthScreen = Dimensions.get('window').width
@@ -37,8 +37,7 @@ export default function AddBarberiaForm(props) {
       rating: 0,
       ratingTotal: 0,
       quantityVoting: 0,
-      createAt: new Date(),
-      createBy: getCurrentUser().uid
+      createAt: new Date()
       
     }
    const responseAddDocument = await addDocumentWithoutId("barberias")
