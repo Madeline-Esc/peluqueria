@@ -4,7 +4,7 @@ import { Icon } from 'react-native-elements'
 import { firebaseApp } from '../../utils/Firebase'
 import firebase from 'firebase/app'
 
-export default function Esteticas(){
+export default function Esteticas({navigation}){
     const [user, setUser] = useState(null)
 
     useEffect(() => {
@@ -24,6 +24,7 @@ export default function Esteticas(){
                 name='plus'
                 color='#0833A2'
                 containerStyle={styles.btnContainer}
+                onPress={() => navigation.navigate("add-estetica")}
             />
             )}
         </View>
